@@ -1,0 +1,62 @@
+.header-wrapper {
+    display: flex;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    height: 80px;
+
+}
+
+.spacer {
+    flex: 1;
+}
+
+.header-wrapper p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.toggle-button {
+    padding: 0 10px;
+}
+
+.countries {
+    display: flex;
+}
+
+.countries p {
+    display: flex;
+    padding: 10px;
+
+}
+
+._nav-items {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.image {
+    padding: 10px;
+}
+
+.image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.profile-info p {
+    text-align: right;
+}
+
+.profile-info span {
+    color: rgb(230, 100, 37);
+}

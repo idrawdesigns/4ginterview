@@ -1,0 +1,7 @@
+.main-wrapper {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    grid-area: main;
+}
