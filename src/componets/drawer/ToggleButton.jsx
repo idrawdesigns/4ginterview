@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar, NavbarToggler } from 'reactstrap'
 
-const ToggleButton = () => {
+const ToggleButton = ({ toggle }) => {
+  console.log('check toggle', toggle)
   return (
     <div>
       <Navbar color="faded" light>
-        <NavbarToggler className="mr-2" />
+        <NavbarToggler className="mr-2" onClick={toggle} />
       </Navbar>
     </div>
   )

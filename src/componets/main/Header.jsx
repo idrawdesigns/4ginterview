@@ -2,12 +2,12 @@ import React from 'react'
 import './Header.css'
 import ToggleButton from '../drawer/ToggleButton'
 
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <div className="header-wrapper">
       <div className="_nav-items">
         <div className="toggle-button">
-          <ToggleButton />
+          <ToggleButton toggle={toggle} />
         </div>
         <div className="countries">
           <p>KENYA</p> <p>UGANDA</p>

@@ -8,10 +8,10 @@ import Header from './Header'
 import Loans from '../loans/Loans'
 import Customers from '../customer/Customer'
 
-const Main = () => {
+const Main = ({ toggle }) => {
   return (
     <main className="main-wrapper">
-      <Header />
+      <Header toggle={toggle} />
       <Switch>
         <Route path="/" exact component={Customers} />
         <Route path="/loans" exact component={Loans} />

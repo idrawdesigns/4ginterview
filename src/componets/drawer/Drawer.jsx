@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { Collapse } from 'reactstrap'
 import './Drawer.css'
 
-const Drawer = () => {
+const Drawer = ({ isOpen }) => {
+  console.log(isOpen)
   return (
-    <div className="drawer-wrapper">
+    <Collapse isOpen={isOpen} className="drawer-wrapper">
       <div className="logo" />
       <nav className="nav-items">
         <ul>
@@ -36,7 +38,7 @@ const Drawer = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </Collapse>
   )
 }
 
