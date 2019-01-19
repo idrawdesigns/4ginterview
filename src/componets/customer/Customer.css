@@ -12,15 +12,7 @@
 
 }
 
-.add-btn {
-    width: 200px;
-    background: rgb(230, 100, 37);
-    color: white;
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: -2px 1px 25px -6px rgba(0, 0, 0, 0.3);
 
-}
 
 .form-area {
     background: white;

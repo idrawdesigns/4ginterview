@@ -39,7 +39,7 @@
     display: block;
     color: black;
     background: rgb(206, 207, 207);
-    border-left: 4px solid rgb(114, 107, 107);
+    border-left: 8px solid rgb(114, 107, 107);
 }
 
 .nav-items li {
@@ -65,7 +65,7 @@
 .active-link {
     padding: 30px;
     display: block;
-    border-left: 4px solid black;
+    border-left: 8px solid black;
     background: rgb(207, 207, 207);
     text-decoration: none;
 }
