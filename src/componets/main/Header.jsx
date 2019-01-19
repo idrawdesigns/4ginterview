@@ -23,7 +23,7 @@ const Header = ({ toggle }) => {
           </p>
         </div>
         <div className="image">
-          <img src={require('../../Assets/avatar.jpeg')} alt="" />
+          <img src={require('../../Assets/avatar.jpg')} alt="" />
         </div>
       </div>
     </div>

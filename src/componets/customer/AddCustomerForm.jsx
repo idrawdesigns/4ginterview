@@ -19,7 +19,7 @@ class AddCustomerForm extends Component {
     lastname: '',
     mobile: '',
     email: '',
-    branch: 'Branch.',
+    branch: '',
     loanlimit: '',
     touched: {
       firstname: false,
@@ -54,9 +54,6 @@ class AddCustomerForm extends Component {
       errors.lastname = 'Last Name is required '
     else if (this.state.touched.lastname && lastname.length > 10)
       errors.lastname = 'Last Name should be <= 10 characters'
-
-    if (this.state.touched.branch)
-      errors.lastname = 'Branch information is required '
 
     const reg = /^\d{10}$/
     if (this.state.touched.mobile && !reg.test(mobile))
@@ -100,8 +97,7 @@ class AddCustomerForm extends Component {
       email,
       branch,
       loanlimit,
-      modal,
-      handleBlur
+      modal
     } = this.state
     const errors = this.validate(firstname, lastname, mobile, email)
 
@@ -173,7 +169,7 @@ class AddCustomerForm extends Component {
                 <Label for="exampleSelect">Select</Label>
                 <Input
                   type="select"
-                  name="Branch"
+                  name="branch"
                   id="exampleSelect"
                   value={branch}
                   invalid={errors.branch !== ''}
@@ -199,7 +195,6 @@ class AddCustomerForm extends Component {
               </FormGroup>
               <Button color="primary">Submit</Button>
             </Form>
-            />
           </ModalBody>
         </Modal>
       </div>
