@@ -4,7 +4,7 @@ import { Table, Alert } from 'reactstrap'
 const CustomerList = ({ customers }) => {
   const customer = customers.length ? (
     customers.map((customer, index) => (
-      <tr>
+      <tr key={customer.email}>
         <th scope="row">{index + 1}</th>
         <td>{customer.firstname}</td>
         <td>{customer.lastname}</td>

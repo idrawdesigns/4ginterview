@@ -111,7 +111,7 @@ class AddCustomerForm extends Component {
           <ModalBody>
             <Form onSubmit={this.handleSubmit}>
               <FormGroup>
-                <Label Htmlfor="First name">First Name</Label>
+                <Label htmlFor="First name">First Name</Label>
                 <Input
                   type="text"
                   name="firstname"
